@@ -1,59 +1,79 @@
-# Currys plc — Strategic & Capital Allocation Intelligence
+# Currys plc — Strategic Capital Allocation Analysis
 
-**Status:** In progress — foundation build updated 10 September 2026
+**Independent Financial Modelling & Corporate Strategy Project**  
+**Status:** Work in progress | September 2026 – Present
 
-## Central question
+## Project Overview
 
-> **Is Currys allocating its resources and capital optimally, and could an alternative combination of organic investment, digital/customer initiatives, M&A, balance-sheet management or shareholder distributions create greater long-term value?**
+This project evaluates whether Currys plc's existing capital-allocation strategy represents the most effective use of its financial resources, or whether alternative investments and shareholder distributions could generate greater long-term, risk-adjusted value.
 
-The project deliberately does **not** start with a predetermined recommendation. If the evidence supports Currys' existing strategy, that is a valid conclusion; if another allocation of capital is superior, the analysis should demonstrate it.
+The analysis combines historical financial performance, operating forecasts, discounted cash flow valuation, capital-allocation scenarios and downside sensitivity testing.
 
-## Current conclusion
+## Central Research Question
 
-The evidence currently supports **disciplined continuation rather than a strategic reset**. The model prioritises the year-end net-cash floor, then measurable organic opportunities in Services/Customer Core and B2B, while treating iD Mobile through a cash-payback lens. M&A remains conditional on target-specific economics. Shareholder distributions are residual uses of genuinely surplus cash.
+**Is Currys' current capital-allocation strategy the best use of its resources, or could an alternative allocation create greater long-term risk-adjusted value?**
 
-## Methodology
+## Analytical Framework
 
-1. Build a source-traceable raw-data layer from Currys' public reporting.
-2. Separate **[R] reported**, **[C] calculated**, **[A] assumption** and **[I] inference**.
-3. Diagnose five-year historical performance and FY25/FY26 statutory/adjusted financials.
-4. Analyse UK&I, Nordics, Services, credit, iD Mobile, B2B and customer initiatives.
-5. Build a segment-led forecast and linked operating three-statement bridge.
-6. Value the business using an FCFF DCF and WACC/terminal-growth sensitivity.
-7. Compare liquidity, organic investment, shareholder returns and conditional M&A under common decision rules.
-8. Stress-test the recommendation through downside and falsifier scenarios.
+| Stage | Analysis |
+|---|---|
+| 1. Business diagnosis | Historical financial performance, profitability, cash generation and competitive positioning |
+| 2. Financial forecasting | Revenue, operating margins, free cash flow and liquidity projections |
+| 3. Valuation | Discounted cash flow analysis and valuation cross-checks |
+| 4. Capital allocation | Organic investment, M&A, share buybacks, dividends and cash retention |
+| 5. Stress testing | Downside scenarios, break-even thresholds and liquidity constraints |
+| 6. Recommendation | Conditional capital-allocation decision and implementation triggers |
 
-## Current model outputs
+## Financial Model
 
-- FY26 revenue: **£9.254bn**
-- FY26 adjusted EBIT: **£255m**
-- FY26 free cash flow: **£157m**
-- FY26 year-end net cash: **£176m**
-- Base FY31E revenue: **~£10.58bn**
-- Base FY31E adjusted EBIT: **~£331m**
-- Base FY31E FCF: **~£186m**
-- Base DCF: **~£2.57/share** at 9.0% WACC / 2.0% terminal growth
-- DCF sensitivity: **~£2.09–£3.43/share** across the displayed WACC / terminal-growth grid
+The Excel workbook includes historical financial analysis, an operating forecast, DCF valuation, alternative capital-allocation scenarios and sensitivity testing.
 
-## Important originality discipline
+The central valuation assumptions include a 12.25% weighted average cost of capital and 2.0% terminal growth rate.
 
-This project does **not** claim to have discovered that Services are recurring/higher-margin, Customer Core is strategic, iD growth consumes working capital, B2B is a management priority or that Nordics is recovering. Currys already states those points.
+These are modelling assumptions rather than independently verified forecasts.
 
-The independent contribution is the next layer: **testing financial significance, comparing competing uses of capital, identifying what is not disclosed, setting decision hurdles and defining what would change the recommendation.**
+## Preliminary Findings
 
-## Files
+Under the central illustrative assumptions:
 
-- `Currys_Strategic_Capital_Allocation_Model.xlsx` — source register, raw data, historicals, segment analysis, KPIs, assumptions, forecast, DCF, capital allocation, M&A framework, credit/downside, statement schedules, dashboard and checklist.
-- `Currys_Strategic_Data_Analysis.ipynb` — reproducible Python analysis.
-- `Currys_Strategic_Capital_Allocation_Deck.pptx` — executive presentation.
-- `Currys_Executive_Recommendation.pdf` — decision memo.
-- `Currys_Interview_Defence_Pack.pdf` — model and interview defence.
-- `Project_Checklist.md` — phase-by-phase audit trail.
+- The DCF produces an estimated equity value of approximately **172.3p per share**.
+- The tested £50m organic investment case produces a negative incremental NPV.
+- The illustrative M&A case passes the central liquidity threshold but does not clear the economic return hurdle.
+- An additional share buyback faces a liquidity constraint once the assumed pension-matching requirement is included.
+- Retaining the marginal £50m preserves financial flexibility until an alternative investment meets the relevant return and liquidity thresholds.
 
-## Primary sources
+These findings are conditional on the assumptions used and should not be interpreted as investment advice.
 
-Currys Annual Report & Accounts 2025/26; Currys Full Year Results 2025/26; Currys strategy pages; earlier results and trading updates. A 9 September 2026 market-price snapshot is used only as a valuation reference.
+## Python Analysis
 
-## Disclaimer
+An accompanying Jupyter notebook uses Python, pandas, NumPy and Matplotlib to examine historical performance and assess the sensitivity of organic-investment returns to changes in operating margins and discount rates.
 
-Independent educational analysis using public information. Not investment advice.
+This component is being expanded to cover additional capital-allocation scenarios.
+
+## Repository Files
+
+- `Currys_Analysis_Corrected.xlsx` — Excel financial model
+- `Currys_Investment_Case_Corrected.pptx` — seven-slide investment and strategy presentation
+- `Currys_Python_Sensitivity_Validated.ipynb` — executed Python diagnostic and sensitivity analysis
+- `README.md` — project documentation
+
+## Current Development Priorities
+
+- Extend the Python analysis across the capital-allocation alternatives.
+- Further validate financial assumptions and source references.
+- Improve scenario testing and presentation integration.
+- Develop a live-linked working version of the PowerPoint presentation.
+
+## Tools and Skills
+
+**Microsoft Excel:** Financial modelling, DCF valuation, NPV, IRR, scenario and sensitivity analysis.
+
+**Python:** pandas, NumPy, Matplotlib and Jupyter Notebook.
+
+**Microsoft PowerPoint:** Financial and strategic communication.
+
+## Sources and Disclaimer
+
+The project draws on Currys plc's published financial results, investor materials and other publicly available information. Forward-looking estimates and hypothetical capital-allocation cases are independently constructed for educational purposes.
+
+This is an independent academic and portfolio project, is not affiliated with Currys plc, and does not constitute financial or investment advice.
